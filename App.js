@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import { View, StyleSheet } from "react-native";
 import { WebView } from "react-native-webview";
-
+/*
+navigator.webkitGetUserMedia({ audio: true },
+  function(stream) {
+    window.ReactNativeWebView.postMessage(stream)
+  });
+*/
 export default class App extends Component {
   render() {
     const runFirst = `
-      navigator.webkitGetUserMedia({ audio: true },
-        function(stream) {
-          window.ReactNativeWebView.postMessage(stream)
-        });
       window.ReactNativeWebView.postMessage('eyy');
       true; // required else occasional silent errors
     `;
