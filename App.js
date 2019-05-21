@@ -5,14 +5,11 @@ import { WebView } from "react-native-webview";
 export default class App extends Component {
   render() {
     const runFirst = `
-      navigator.mediaDevices.getUserMedia({ audio: true })
-        .then(function(stream) {
-          window.ReactNativeWebView.postMessage('You let me use your mic!')
-        })
-        .catch(function(err) {
-          window.ReactNativeWebView.postMessage(err)
-          window.ReactNativeWebView.postMessage('No mic for you!')
+      navigator.webkitGetUserMedia({ audio: true },
+        function(stream) {
+          window.ReactNativeWebView.postMessage(stream)
         });
+      window.ReactNativeWebView.postMessage('eyy');
       true; // required else occasional silent errors
     `;
     return (
