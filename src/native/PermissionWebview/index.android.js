@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { requireNativeComponent, ViewPropTypes } from "react-native";
 
-var mcs = {
+const mcs = {
   name: "PermissionWebview",
   propTypes: {
     sourceUri: PropTypes.string,
@@ -9,4 +9,4 @@ var mcs = {
   }
 };
 
-module.exports = requireNativeComponent("PermissionWebviewManager", mcs);
+export default requireNativeComponent("PermissionWebviewManager", mcs);

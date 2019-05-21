@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { View, StyleSheet } from "react-native";
-import { WebView } from "./native/WebView";
+import { View } from "react-native";
+import PermissionWebview from "./native/PermissionWebview";
 /*
 navigator.webkitGetUserMedia({ audio: true },
   function(stream) {
@@ -13,9 +13,10 @@ export default class App extends Component {
       window.ReactNativeWebView.postMessage('eyy');
       true; // required else occasional silent errors
     `;
+    console.log(PermissionWebview);
     return (
-      <View style={styles.container}>
-        <WebView
+      <View style={{ flex: 1 }}>
+        <PermissionWebview
           source={{
             uri:
               "https://github.com/react-native-community/react-native-webview"
@@ -27,10 +28,6 @@ export default class App extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: { flex: 1 }
-});
 
 /*
 import { WebView } from "react-native-webview";

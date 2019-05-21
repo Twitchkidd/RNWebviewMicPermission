@@ -37,4 +37,10 @@ Oh no it's been so long I wrote in this, okay, I went for a walk and a coffee an
 
 So the touch points are going to be App.js and now I've got OldApp.js because I don't know why I was messing with branches right now but here we are. We're also going to split out a src/native/WebView with an index.js and index.android.js, and there are the AndroidManifest.xml files and proguard-rules.pro to tackle if need be.
 
-Okeeday, now it's a little tidier, still not tied together yet, and I added the whole listproject folder and like alllll the permissions in AndroidManifest from that repo we were looking at
+Okeeday, now it's a little tidier, still not tied together yet, and I added the whole listproject folder and like alllll the permissions in AndroidManifest from that repo we were looking at ...
+
+Okay, uninstalled and reinstalled app, as I changed java stuff, trying to get it to run ...
+
+Well it's some time later, and if I could possibly explain what is happening on this side ... oh my God ...
+
+Look I've not got high hopes for this, not gonna lie.
