@@ -36,3 +36,5 @@ Oh, maybe it's webkitGetUserMedia ... oh now nothing is working ...
 Oh no it's been so long I wrote in this, okay, I went for a walk and a coffee and I have new ideas on how to do this and also I tried a standing desk arrangement and my back still hurts lol.
 
 So the touch points are going to be App.js and now I've got OldApp.js because I don't know why I was messing with branches right now but here we are. We're also going to split out a src/native/WebView with an index.js and index.android.js, and there are the AndroidManifest.xml files and proguard-rules.pro to tackle if need be.
+
+Okeeday, now it's a little tidier, still not tied together yet, and I added the whole listproject folder and like alllll the permissions in AndroidManifest from that repo we were looking at
