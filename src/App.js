@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View, StyleSheet } from "react-native";
-import { WebView } from "react-native-webview";
+import { WebView } from "./native/WebView";
 /*
 navigator.webkitGetUserMedia({ audio: true },
   function(stream) {
@@ -31,3 +31,21 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: { flex: 1 }
 });
+
+/*
+import { WebView } from "react-native-webview";
+
+export default class App extends Component {
+  render() {
+    const runFirst = `
+      navigator.mediaDevices.getUserMedia({ audio: true })
+        .then(function(stream) {
+          window.ReactNativeWebView.postMessage('You let me use your mic!')
+        })
+        .catch(function(err) {
+          window.ReactNativeWebView.postMessage(err)
+          window.ReactNativeWebView.postMessage('No mic for you!')
+        });
+      true; // required else occasional silent errors
+    `;
+*/
