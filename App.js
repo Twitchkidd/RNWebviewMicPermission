@@ -5,9 +5,14 @@ import { WebView } from "react-native-webview";
 export default class App extends Component {
   render() {
     const runFirst = `
-      document.body.style.backgroundColor = 'red';
-      window.alert('hi!');
-      window.ReactNativeWebView.postMessage('Hello!');
+      navigator.mediaDevices.getUserMedia({ audio: true })
+        .then(function(stream) {
+          window.ReactNativeWebView.postMessage('You let me use your mic!')
+        })
+        .catch(function(err) {
+          window.ReactNativeWebView.postMessage(err)
+          window.ReactNativeWebView.postMessage('No mic for you!')
+        });
       true; // required else occasional silent errors
     `;
     return (

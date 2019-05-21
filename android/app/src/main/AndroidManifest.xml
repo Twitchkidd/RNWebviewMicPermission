@@ -2,6 +2,7 @@
   package="com.rnwebviewmicpermission">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.webkit.PermissionRequest" />
 
     <application
       android:name=".MainApplication"
