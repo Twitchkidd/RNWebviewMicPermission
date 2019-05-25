@@ -44,3 +44,21 @@ Okay, uninstalled and reinstalled app, as I changed java stuff, trying to get it
 Well it's some time later, and if I could possibly explain what is happening on this side ... oh my God ...
 
 Look I've not got high hopes for this, not gonna lie.
+
+2019-05-25
+
+Good morning! Let's see where we're at here ... booting emulator ...
+
+Okay this bothers me a little. Why is this necessary? Does the Google App just turn the microphone to record? `emulator: Revoking microphone permissions for Google App.`
+
+Oh good, that's the same error message as last time, haha.
+
+`Invariant Violation: requireNativeComponent: "PermissionWebviewManager" was not found on the UIManager.`
+
+Okay, so I added, I think, the package to MainApplication, in the getPackages function.
+
+Mmm, well ... package listproject doesn't exist. Cooool ... I'm trying to get this thing to compile by removing all the video stuff from the added 'listproject' stuff ...
+
+LOL I just removed things until it compiled.
+
+Okay, made some changes, going to start a new branch to nuke this thing and get it going with the current way of doing native android modules, because I think Context changed everything. It's maybe starting to look less like giberish to me.
