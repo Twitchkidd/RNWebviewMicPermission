@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class CustomToastPackage implements ReactPackage {
+public class MicPermissionWebviewPackage implements ReactPackage {
 
   @Override
     public List<ViewManager> createViewManagers(

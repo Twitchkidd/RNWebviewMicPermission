@@ -19,12 +19,12 @@ public class MicPermissionWebviewViewManager extends SimpleViewManager<MicPermis
     }
 
     @Override
-    public PermissionWebviewView createViewInstance(ThemedReactContext context) {
+    public MicPermissionWebviewView createViewInstance(ThemedReactContext context) {
         return new MicPermissionWebviewView(context); //If your customview has more constructor parameters pass it from here.
     }
     
     @ReactProp(name = "sourceUri")
-    public void setSource(PermissionWebviewView view, String source) {
+    public void setSource(MicPermissionWebviewView view, String source) {
         view.loadUrl(source);
     }
 }
