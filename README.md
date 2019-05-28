@@ -1,5 +1,15 @@
 # React Native Webview Microphone Permission Project
 
+AAAHHHH!!!!!
+
+I tried to understand what was happening, I thought I wrote approximately the right code, but for the life of me I have no idea why the screen is blank. I'm seeing <MicPermissionWebviewViewManager> with all the props in there in the debugger.
+
+I know the React Native Community WebView component is out there, but I tried that and also failed with it. This new version of my failure is more based off of (https://github.com/Unapedra/rn-android-permission-webview)[https://github.com/Unapedra/rn-android-permission-webview] but for the life of me I don't know what I'm doing wrong, or what I'm doing right, or what I'm doing. I was hoping to get it to work to help out a fellow developer and then open an issue in the (React Native Community Webview repo)[https://github.com/react-native-community/react-native-webview/] ... ahhhh!
+
+Anybody out there?
+
+////////////////////////////////////////////////////
+
 Okay, process:
 
 `react-native init`
