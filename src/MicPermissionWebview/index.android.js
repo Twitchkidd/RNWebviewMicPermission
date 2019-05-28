@@ -1,2 +1,3 @@
 import { requireNativeComponent } from "react-native";
-export default requireNativeComponent("whatname");
+export default requireNativeComponent("MicPermissionWebviewManager");
+// ? MicPermissionWebviewViewManager
